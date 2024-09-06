@@ -50,8 +50,8 @@ let getMovie = () => {
                 }
         })
         // if error occures
-        .catch(() => {
-            result.innerHTML = `<h3 class="msg">Error Occured</h3>`;
+        .catch((err) => {
+            result.innerHTML = `<h3 class="msg">${err}</h3>`;
         });
     }
 }
